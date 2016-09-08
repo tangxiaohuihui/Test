@@ -1,0 +1,1 @@
+测试hibernate是否生效

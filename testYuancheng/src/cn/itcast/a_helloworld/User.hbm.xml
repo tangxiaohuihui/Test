@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- This mapping demonstrates content-based discrimination for the table-per-hierarchy 
+	mapping strategy, using a formula discriminator. -->
+
+<hibernate-mapping package="cn.itcast.a_helloworld">
+
+	<class name="User" table="xjk_privilege">
+
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="privilegeId" type="int" column="privilegeId"></property>
+		<property name="userId" type="int" column="userId"></property>
+		<property name="username" type="string" column="username"/>
+	</class>
+</hibernate-mapping>
